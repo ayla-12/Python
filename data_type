@@ -1,1 +1,21 @@
+#숫자 자료형
 
+print(5)
+print(-10)
+print(3.14)
+print(3*(3+12))
+
+#C 언어처럼 굳이 자료형 설정을 해주지 않아도 알아서 된다.
+
+#문자열 자료형
+
+print('풍선')
+print("나비")
+print("ㅋ"*9) #이런식으로도 가능함
+
+
+#boolean 자료형(참/거짓)
+print(5>10) #결과값 False
+print(not False) #결과값 True
+
+#not을 활용하여 다양하게 출력할 수 있다.
