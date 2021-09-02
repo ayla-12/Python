@@ -1,0 +1,20 @@
+#문자열 처리함수
+
+python = "Python is Amazing"
+print(python.lower()) #문자열 전체를 소문자로
+print(python.upper()) #문자열 전체를 대문자로
+print(python[0].isupper()) #0번째 문자가 대문자인가? True
+print(len(python)) #문자열의 길이
+print(python.replace("Python", "Java")) #원하는 문자를 원하는 다른 문자로 교체 replace
+
+index = python.index("n") #변수 안에서 원하는 글자가 몇번째에 위치해있는지 알아낼 수 있음
+print(index)
+index = python.index("n", index+1) #찾은 위치 다음부터, 또 n이 나오는걸 찾을 수 있음
+print(index)
+
+print(python.find("n")) #원하는 문장이 적힌걸 찾을 수 있음. 원하는 값이 포함되지 않으면 -1을 변환
+
+print(python.find("Java")) #-1 나옴
+# print(python.index("Java")) #반면에 index에는 오류가 뜬다
+
+print(python.count("n")) #문장 내 글자가 몇 번 등장하는지 알 수 있다
