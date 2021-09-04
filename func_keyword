@@ -1,0 +1,9 @@
+#키워드값
+
+def profile(name, age, main_lang):
+    print(name, age, main_lang)
+
+profile(name = "유재석", main_lang="파이썬", age=20)
+profile(main_lang="자바", age=25, name="김태호")
+
+#순서와 다르게 넣어도 키워드 값(키워드=값)을 지정해주면 함수 순서대로 잘 튀어 나옴
