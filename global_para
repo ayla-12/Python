@@ -1,0 +1,30 @@
+#지역변수와 전역변수
+
+#지역변수 : 함수 내에서만 쓸 수 있음. 함수가 끝나면 사라짐
+#전역변수 : 코드 전역에서 사용가능한 변수
+
+gun = 10
+
+def checkpoint(soldiers): #경계근무
+    global gun #전역 공간에 있는 gun을 사용하겠다는 뜻
+    # gun = 20 #지역 변수
+    gun = gun - soldiers
+    print("[함수 내] 남은 총 : {0}" .format(gun))
+
+print("전체 총 : {0}" .format(gun))
+checkpoint(2) #두명이 경게근무를 나감
+print("남은 총 : {0}" .format(gun))
+
+# 전역변수는 권장되지 않음...
+
+def checkpoint_ret(gun, soldiers):
+    gun = gun - soldiers
+    print("[함수 내] 남은 총 : {0}" .format(gun))
+    #return gun
+
+print("전체 총 : {0}" .format(gun))
+gun = checkpoint_ret(gun, 2) #값을 인자로 전달하여 계산을 하고 다시 전역변수에 집어넣음
+print("남은 총 : {0}" .format(gun))
+
+#위랑 아래의 차이는
+#전역변수에 직접 접근하느냐, 값을 가져와서 고치고 다시 집어넣느냐 차이
