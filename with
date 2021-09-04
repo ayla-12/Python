@@ -1,0 +1,15 @@
+# with
+
+import pickle
+
+with open("profile.pickle","rb") as profile_file: #피클은 바이너리 써야함!!!
+    print(pickle.load(profile_file))
+
+# 파일을 열어서 profile_file에 저장을 하고, 파일의 내용을 피클의 로드를 이용해서 불러와 출력해줌
+# 굳이 close를 해줄 필요가 없음!!!
+
+# with open("study.txt","w", encoding="utf8") as study_file:
+#     study_file.write("파이썬을 열심히 공부하고 있어요")
+
+with open("study.txt","r",encoding="utf8") as study_file:
+    print(study_file.read()) # .read를 통해 저장된 것을 불러왔음
