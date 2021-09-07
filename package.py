@@ -19,3 +19,11 @@ trip_to.detail()
 # travel 안에 있는 모든걸 쓰겠다는 건데 오류가 남
 # 개발자가 문법 상에서 공개 범위를 설정을 해줘야하기 때문임
 # __init__ 파일 안에 __all__을 통해서 공개 범위를 설정해 줄 수 있음!
+
+import inspect
+import random
+print(inspect.getfile(random))
+print(inspect.getfile(vietnam))
+
+# 패키지와 모듈의 위치를 출력할 수 있음
+# 굳이 같은 경로가 아니더라도 패키지를 가져다 두면 사용할 수 있음
